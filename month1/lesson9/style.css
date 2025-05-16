@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Yuji+Mai&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.hero_wrapper {
+  background-color: #163a24;
+  padding: 0 120px;
+}
+
+nav {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_info_wrapepr {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.nav_info_wrapepr a {
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  text-decoration: none;
+  color: #fbfaf7;
+}
+
+nav button {
+  width: 141px;
+  border-radius: 50px;
+  height: 52px;
+  background-color: #198c36;
+  border: none;
+  cursor: pointer;
+  color: #fbfaf7;
+}
+
+/* main */
+main {
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+main h1 {
+  font-family: Recoleta;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 65.25px;
+  letter-spacing: 0%;
+  color: #fbfaf7;
+}
+main p {
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0%;
+  color: #fbfaf7;
+}
+/* main */
+
+/* parts */
+.parts {
+  padding: 120px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.tophuman {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  gap: 99px;
+}
+.tophuman h2,
+.bottomhuman h2 {
+  font-family: Recoleta;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: 0%;
+}
+.tophuman p,
+.bottomhuman p {
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0%;
+}
+.bottomhuman {
+  display: flex;
+  gap: 99px;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+
+.tophuman div,
+.bottomhuman div {
+  width: 390px;
+}
+/* parts */
+
+/* partner */
+.partner {
+  padding: 120px;
+  margin-bottom: 120px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.partner h2 {
+  font-family: Recoleta;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #163a24;
+
+  margin-bottom: 67px;
+}
+
+.partner div {
+  display: flex;
+  justify-content: center;
+  gap: 86px;
+}
+
+/* partner */
+
+/* production */
+.production_wrapper {
+  background-color: #163a24;
+}
+.production {
+  padding: 120px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.production > h2 {
+  font-family: Recoleta;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 73px;
+  color: #fbfaf7;
+}
+.production .production_cards_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.production .production_cards_wrapper > div {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 295px;
+}
+
+/* production */

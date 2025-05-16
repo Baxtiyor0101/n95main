@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNova Landing Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: #f4f6f9;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background: #007bff;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .hero-img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        display: block;
+      }
+
+      section.features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        padding: 50px 30px;
+        background: white;
+      }
+
+      .feature {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 16px;
+        padding: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .feature:hover {
+        transform: translateY(-8px);
+      }
+
+      .feature img {
+        width: 60px;
+        margin-bottom: 20px;
+      }
+
+      .feature h3 {
+        margin-bottom: 10px;
+        color: #007bff;
+      }
+
+      .gallery {
+        padding: 50px 30px;
+      }
+
+      .gallery h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #222;
+      }
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+
+      .image-grid img {
+        width: 100%;
+        border-radius: 12px;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      footer {
+        background: #222;
+        color: #ccc;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+      }
+
+      footer a {
+        color: #ccc;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to TechNova</h1>
+      <p>
+        Explore the future of innovation with our smart, user-focused tech
+        experiences
+      </p>
+    </header>
+
+    <img
+    src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+      alt="Hero Banner"
+      class="hero-img"
+    />
+
+    <section class="features">
+      <div class="feature">
+        src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+        <h3>Cloud Solutions</h3>
+        <p>
+          Scale your operations with our secure and flexible cloud
+          infrastructure.
+        </p>
+      </div>
+      <div class="feature">
+        <img
+        src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+          alt="AI Icon"
+        />
+        <h3>AI-Powered Tools</h3>
+        <p>
+          Leverage smart analytics, automation, and machine learning for faster
+          insights.
+        </p>
+      </div>
+      <div class="feature">
+        <img
+        src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+          alt="Security Icon"
+        />
+        <h3>Top-tier Security</h3>
+        <p>
+          Protect your data and privacy with state-of-the-art encryption and
+          systems.
+        </p>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2>Explore Our Work</h2>
+      <div class="image-grid">
+        <img
+        src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+          alt="Tech"
+        />
+        <img
+        src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+          alt="Startup"
+        />
+        <img
+        src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+          alt="Data Center"
+        />
+        <img
+        src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+          alt="Teamwork"
+        />
+        <img
+        src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+          alt="Coding"
+        />
+        <img
+        src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+          alt="Futuristic"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2025 TechNova Inc. | <a href="#">About</a> |
+        <a href="#">Contact</a> |
+        <a href="#">Privacy Policy</a>
+      </p>
+    </footer>
+  </body>
+</html>

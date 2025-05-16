@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Summit Registration</title>
+  <link rel="icon" href="images/favicon.svg" />
+  <style>
+    /* Reset & Box Model */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f9;
+      color: #333;
+      padding: 20px;
+    }
+
+    header, footer {
+      background: #212529;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #ddd;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #444;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    /* Form Styles */
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    textarea {
+      grid-column: 1 / -1;
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .full-width {
+      grid-column: 1 / -1;
+    }
+
+    .form-actions {
+      grid-column: 1 / -1;
+      text-align: right;
+    }
+
+    button {
+      background: #007bff;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    /* Table Styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    thead {
+      background: #007bff;
+      color: white;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    tfoot {
+      background: #e9ecef;
+      font-weight: bold;
+    }
+
+    footer p {
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tech Summit 2025</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="./gallery.html">Agenda</a>
+      <a href="#">Speakers</a>
+      <a href="#">Register</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Register for the Event</h2>
+      <form>
+        <div>
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" placeholder="John Doe" required />
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="john@example.com" required />
+        </div>
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+998901234567" />
+        </div>
+        <div>
+          <label for="date">Date of Attendance</label>
+          <input type="date" id="date" required />
+        </div>
+        <div>
+          <label for="track">Choose Track</label>
+          <select id="track">
+            <option>Web Development</option>
+            <option>AI & Machine Learning</option>
+            <option>Cybersecurity</option>
+            <option>Mobile Development</option>
+          </select>
+        </div>
+        <div>
+          <label>Gender</label>
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+        </div>
+        <div class="full-width">
+          <label for="comments">Additional Notes</label>
+          <textarea id="comments" placeholder="Write any dietary restrictions, special needs..."></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit">Submit Registration</button>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <h2>Conference Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Topic</th>
+            <th>Speaker</th>
+            <th>Room</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>09:00 - 10:00</td>
+            <td>Opening Keynote</td>
+            <td>Sarah Lee</td>
+            <td>Main Hall</td>
+          </tr>
+          <tr>
+            <td>10:15 - 11:15</td>
+            <td>Future of AI</td>
+            <td>Dr. Ahmed</td>
+            <td>Room A</td>
+          </tr>
+          <tr>
+            <td>11:30 - 12:30</td>
+            <td>Secure Web Apps</td>
+            <td>Kevin Zhao</td>
+            <td>Room B</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Lunch Break: 12:30 - 14:00</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Tech Summit. All rights reserved.</p>
+    <p>Contact: info@techsummit.com | +998 90 123 4567</p>
+  </footer>
+</body>
+</html>

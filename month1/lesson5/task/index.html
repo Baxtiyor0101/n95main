@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complex Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Complex Table Example</h1>
+    </header>
+    <nav>
+        <a href="index.html">Table</a>
+        <a href="media.html">Media</a>
+        <a href="summary.html">Summary</a>
+    </nav>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">ID</th>
+                    <th colspan="2">Personal Information</th>
+                    <th colspan="2">Contact Information</th>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Alice</td>
+                    <td>25</td>
+                    <td>alice@example.com</td>
+                    <td>+123456789</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bob</td>
+                    <td>30</td>
+                    <td>bob@example.com</td>
+                    <td>+987654321</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total Entries: 2</td>
+                </tr>
+            </tfoot>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Product ID</th>
+                    <th rowspan="2">Product Name</th>
+                    <th colspan="3">Quarterly Sales (2024)</th>
+                    <th rowspan="2">Total</th>
+                </tr>
+                <tr>
+                    <th>Q1</th>
+                    <th>Q2</th>
+                    <th>Q3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">101</td>
+                    <td rowspan="2">Laptop</td>
+                    <td>150</td>
+                    <td>200</td>
+                    <td>250</td>
+                    <td rowspan="2">600</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Sales increased steadily throughout the quarters</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Smartphone</td>
+                    <td>300</td>
+                    <td>350</td>
+                    <td>400</td>
+                    <td>1050</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">103</td>
+                    <td rowspan="2">Tablet</td>
+                    <td>120</td>
+                    <td>130</td>
+                    <td>140</td>
+                    <td rowspan="2">390</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Stable sales performance</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5"><strong>Total Products Sold</strong></td>
+                    <td><strong>2040</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        &copy; 2024 Complex Table Page
+    </footer>
+</body>
+</html>

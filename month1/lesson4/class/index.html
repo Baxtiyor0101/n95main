@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- forms -->
+    <!-- input types -->
+    <form action="sdsfsdf" id="form">
+      <label for="name">Your Name</label>
+      <input
+        maxlength="8"
+        minlength="2"
+        id="name"
+        type="text"
+        name="nameOfUser"
+        required
+        placeholder="enter here your name"
+      />
+      <br />
+      <label for="">Email</label>
+      <input readonly type="email" value="text@gmail.com" placeholder="email" />
+      <br />
+      <label for="Password">Password</label>
+      <input id="password" type="password" placeholder="password" /> <br />
+      <label for="date">birth date</label>
+      <input type="date" id="date" placeholder="password" /> <br />
+      <label for="">Meeting time</label>
+      <input type="time" /> <br />
+      <label for="">number of child</label>
+      <input
+        type="number"
+        max="1000"
+        min="9"
+        placeholder="nummber of children"
+      />
+      <br />
+      <label for="">month</label>
+      <input type="month" /> <br />
+      <label for="">metting week</label>
+      <input type="week" /> <br />
+      <input type="text" /> <br />
+
+      <label for="">level of english</label>
+      <input type="range" step="1" value="" /> <br />
+      <label for="">tel number</label>
+      <input type="tel" pattern="+[0-9]{3}-[0-9]{2}-[0-9]{3}" /> <br />
+      <label for="">what is your favoure color</label>
+      <input type="color" />
+      <br />
+      <label for="">your resume</label>
+      <input type="file" />
+      <br />
+      <label for="">your portfolio</label>
+      <input type="url" />
+      <br />
+      <label for=""></label>
+      <br />
+      <input name="gender" type="radio" />
+      <label for="male">male</label><br />
+      <input checked name="gender" type="radio" />
+      <label for="female">female</label><br />
+
+      <label for="">html</label> <input checked type="checkbox" />
+      <label for="">css</label> <input type="checkbox" />
+      <label for="">js</label> <input type="checkbox" />
+      <label for="">python</label> <input type="checkbox" />
+      <label for="">C#</label> <input type="checkbox" />
+      <label for="">react</label> <input type="checkbox" />
+      <label for="">Flutter</label> <input type="checkbox" /> <br />
+      <!-- ========= other form elemtns -->
+      <label for="">give your comment</label>
+      <textarea name="" id="" cols="40" rows="5" resize></textarea> <br />
+      <label for="">your country</label>
+      <select name="" id="">
+        <option value="">Uzb</option>
+        <option selected value="">USA</option>
+        <option value="">RU</option>
+        <option value="">KZ</option>
+      </select>
+      <br />
+
+      <fieldset>
+        <legend>your skills</legend>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+        tempore laudantium ratione?
+      </fieldset>
+      <br />
+      <input
+        list="ice-cream-flavors"
+        id="ice-cream-choice"
+        name="ice-cream-choice"
+      />
+      <datalist id="ice-cream-flavors">
+        <option value="Chocolate"></option>
+        <option value="Coconut"></option>
+        <option value="Mint"></option>
+        <option value="Strawberry"></option>
+        <option value="Vanilla"></option>
+      </datalist>
+
+      <button type="reset">reset</button>
+      <button>cancel</button>
+
+      <!-- =============== -->
+      <button type="submit">submit</button>
+      <input type="submit" value="send the form" />
+
+      <!-- Radio and checkbox -->
+    </form>
+
+    <!-- <script>
+      let pass = document.getElementById("password");
+      let form = document.getElementById("form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        console.log(pass.value);
+      });
+      console.log(pass.value);
+    </script> -->
+  </body>
+</html>
+
+<!-- 
+    nameOfUser:Jasur
+ -->
+
+<!-- 
+    gender:male
+  -->
+
+<!-- [html,css,js,react] -->

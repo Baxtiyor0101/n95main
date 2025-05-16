@@ -1,0 +1,63 @@
+.item {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  /* border-radius: 50%; */
+  border: 5px solid red;
+  /* border-bottom: 5px solid white; */
+  /* animation-name: animName; */
+  /* animation-name: position; */
+  /* animation-duration: 2s; */
+  /* animation-delay: 2s; */
+  /* animation-timing-function: linear; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction:alternate-reverse; */
+  /* animation-fill-mode: both; */
+  animation: position 2s linear 1s reverse 3;
+}
+
+@keyframes animName {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes position {
+  0% {
+    transform: translate(0);
+    background-color: blue;
+  }
+  25% {
+    transform: translateX(200px);
+    background-color: blueviolet;
+  }
+  50% {
+    transform: translate(200px, 200px);
+    background-color: brown;
+  }
+  100% {
+    transform: translateY(200px);
+    background-color: chartreuse;
+  }
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(360deg);
+  }
+  53% {
+    transform: translateX(-30px);
+  }
+  76% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

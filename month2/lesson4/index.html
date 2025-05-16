@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <style>
+      /* here its styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 1170px;
+        margin: auto;
+      }
+      .checkbtn {
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+      }
+      #check {
+        display: none;
+      }
+      @media (max-width: 952px) {
+        .checkbtn {
+          display: block;
+        }
+        ul {
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          background: #2c3e50;
+          top: 80px;
+          left: -100%;
+          text-align: center;
+          transition: all 0.5s ease;
+        }
+        nav ul li {
+          display: block;
+          margin: 50px 0;
+          line-height: 30px;
+        }
+        nav ul li a {
+          font-size: 20px;
+        }
+        a:hover,
+        a.active {
+          background: none;
+          color: #3498db;
+        }
+        #check:checked ~ ul {
+          left: 0;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    /* <!-- responsiv navabr with input type checkbax  -->
+    <!-- when input type checkbax is checked then navabr will be responsive 
+    i mean desktop navbar closed ans mobile navbar open
+    -->
+    <!-- here we go --> */
+    <div class="container">
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Logo</label>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
+      

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS-лаборатория</title>
+  <style>
+    /* 1. Меню */
+    ul.menu {
+      list-style: none;
+      padding: 0;
+      display: flex;
+    }
+    ul.menu li {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    /* TODO: first-child, last-child, nth-child, not */
+
+    /* 2. Форма */
+    .form-container {
+      margin: 20px 0;
+    }
+    .form-container input {
+      padding: 5px;
+      font-size: 1rem;
+    }
+    .form-container button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    /* TODO: :enabled */
+
+    /* 3. Карточки */
+    ul.cards {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    ul.cards li.card {
+      width: 150px;
+      height: 150px;
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+    ul.cards li.card:hover {
+      /* TODO: комбинированный трансформ */
+    }
+    /* TODO: first-child, last-child стили для .card */
+
+    /* 4. Псевдоэлементы */
+    h1 {
+      position: relative;
+      font-size: 2rem;
+    }
+    h1::before {
+      /* TODO: вставить символ/иконку */
+      content: "🔹";
+      margin-right: 8px;
+    }
+    button.more::after {
+      /* TODO: вставить стрелку или символ */
+    }
+
+    /* 5. Градиенты */
+    body {
+      margin: 0;
+      padding: 20px;
+      /* TODO: linear-gradient для фона */
+    }
+    .header {
+      padding: 20px;
+      /* TODO: radial-gradient */
+    }
+    .footer {
+      padding: 20px;
+      /* TODO: conic-gradient */
+    }
+  </style>
+</head>
+<body class="gradient-bg">
+  <div class="header">
+    <h1>CSS-лаборатория</h1>
+  </div>
+
+  <ul class="menu">
+    <li class="active">Главная</li>
+    <li>О нас</li>
+    <li class="not-active">Услуги</li>
+    <li>Контакты</li>
+  </ul>
+
+  <div class="form-container">
+    <input type="text" id="name" placeholder="Введите минимум 3 символа">
+    <button class="more" disabled>Подробнее</button>
+  </div>
+
+  <ul class="cards">
+    <li class="card">1</li>
+    <li class="card">2</li>
+    <li class="card">3</li>
+    <li class="card">4</li>
+  </ul>
+
+  <div class="footer">
+    <p>© 2025 Ваша компания</p>
+  </div>
+
+  <script>
+    // Включение/отключение кнопки
+    const input = document.getElementById('name');
+    const btn   = document.querySelector('.form-container button');
+    input.addEventListener('input', () => {
+      btn.disabled = input.value.length < 3;
+    });
+  </script>
+</body>
+</html>

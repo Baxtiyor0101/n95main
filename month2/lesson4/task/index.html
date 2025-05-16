@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Animation Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 900px;
+    }
+    .box {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #3498db;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+    /* 1. Simple translate */
+    @keyframes move {
+      from { transform: translateX(0); }
+      to   { transform: translateX(200px); }
+    }
+    .move {
+      animation: move 2s linear infinite alternate;
+    }
+    /* 2. Continuous Rotation */
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+    .rotate {
+      animation: rotate 3s linear infinite;
+    }
+    /* 3. Pulsing scale */
+    @keyframes pulse {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.5); }
+      100% { transform: scale(1); }
+    }
+    .pulse {
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+    /* 4. Color change */
+    @keyframes colorChange {
+      0%   { background-color: #3498db; }
+      50%  { background-color: #e74c3c; }
+      100% { background-color: #3498db; }
+    }
+    .color-change {
+      animation: colorChange 4s ease-in-out infinite;
+    }
+    /* 5. Fade in/out */
+    @keyframes fade {
+      0%   { opacity: 1; }
+      50%  { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .fade {
+      animation: fade 3s ease-in-out infinite;
+    }
+    /* 6. Skew oscillation */
+    @keyframes skew {
+      0%   { transform: skew(0deg); }
+      50%  { transform: skew(20deg); }
+      100% { transform: skew(0deg); }
+    }
+    .skew {
+      animation: skew 2s ease-in-out infinite alternate-reverse;
+    }
+    /* 7. Combined translate & rotate */
+    @keyframes combined {
+      0%   { transform: translateY(0) rotate(0deg); }
+      50%  { transform: translateY(-50px) rotate(180deg); }
+      100% { transform: translateY(0) rotate(360deg); }
+    }
+    .combined {
+      animation: combined 5s ease-in-out infinite;
+      animation-delay: 1s;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box move">Move</div>
+    <div class="box rotate">Rotate</div>
+    <div class="box pulse">Pulse</div>
+    <div class="box color-change">Color</div>
+    <div class="box fade">Fade</div>
+    <div class="box skew">Skew</div>
+    <div class="box combined">Combined</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+.wrap p {
+  background-color: red;
+}
+
+.wrap p:last-child {
+  background-color: rgb(115, 196, 28);
+}
+
+.wrap p:nth-child(even) {
+  background-color: rgb(44, 156, 216);
+}
+
+td:nth-child(even) {
+  background-color: rgb(149, 144, 137);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(199, 133, 40);
+}
+
+.btn {
+  position: relative;
+  border: none;
+  background-color: rgb(218, 163, 46);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 15px;
+  /* outline: none; */
+}
+
+.btn::after {
+  position: absolute;
+  content: "";
+  z-index: 88;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: none;
+  left: 2px;
+  top: 8px;
+}
+
+.btn:hover::after {
+  display: block;
+}
+
+/* Gradient 
+        linear
+        cubic
+        squere
+*/
+
+.item {
+  width: 300px;
+  height: 160px;
+  /* background-color: blue; */
+  /* background-image: linear-gradient( blue 50px, red 50px 55px,white 55px 105px,red 105px 110px,green  110px 160px); */
+  /* background-image: radial-gradient(circle,red 40px, green,black); */
+  background-image: conic-gradient(red 45deg, green 45deg 90deg,yellow 90deg 180deg);
+}

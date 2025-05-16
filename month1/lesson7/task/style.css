@@ -1,0 +1,118 @@
+/* CSS Boilerplate */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    text-shadow: 1px 1px 2px black;
+    text-transform: uppercase;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .project {
+    margin-bottom: 15px;
+  }
+  
+  .project h3::first-letter {
+    font-size: 150%;
+    color: red;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .highlight {
+    background-color: yellow;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #aaa;
+  }
+  
+  input[type="submit"] {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #222;
+  }
+  
+  /* Box Model Practice */
+  .bio {
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 2px dashed #aaa;
+  }
+  
+  /* Display examples */
+  a, img, span {
+    display: inline-block;
+    margin: 5px;
+  }
+  
+  footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: small;
+  }
+  
