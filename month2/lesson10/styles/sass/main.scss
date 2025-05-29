@@ -1,0 +1,19 @@
+// mixins
+// loops
+// for
+// while
+// each
+
+@import "mixins";
+@import "loops";
+.btn {
+  @include button {
+    font-weight: 800;
+  }
+  font-size: large;
+  color: blue;
+}
+
+.card {
+  @include card();
+}

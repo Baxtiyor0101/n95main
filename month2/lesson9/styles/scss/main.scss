@@ -1,0 +1,64 @@
+@import "variables";
+@import "navbar";
+@import "placeholders";
+@import "functions";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $main-bg-color;
+}
+
+.container {
+  max-width: 1350px;
+  padding: 0 100px;
+  margin: 0 auto;
+  background-image: url("../../../bacimg.jfif");
+}
+
+.text {
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: larger;
+  font-weight: normal;
+  line-height: 1.1;
+  word-spacing: 2px;
+  letter-spacing: normal;
+}
+.test {
+  border: 1px solid red;
+}
+h3 {
+  @extend .text;
+  @extend .test;
+  color: blue;
+}
+
+h4 {
+  @extend %typography;
+  background-color: yellow;
+  padding: calculate();
+}
+
+main {
+  button {
+    padding: 10px;
+    background-color: chocolate;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    // width: main-sizes(large);
+  }
+  .large {
+    width: main-sizes(large);
+  }
+  .medium {
+    width: main-sizes(medium);
+  }
+  .small {
+    width: main-sizes();
+  }
+}

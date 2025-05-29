@@ -1,0 +1,15 @@
+@function main-sizes($size: medium) {
+  @if ($size==large) {
+    @return 100px;
+  } @else if($size==medium) {
+    @return 75px;
+  } @else if($size == small) {
+    @return 50px;
+  } @else {
+    @error "this size is not exist in our buttin sizes";
+  }
+}
+
+@function calculate() {
+  @return (1rem * 10)/4;
+}

@@ -1,0 +1,51 @@
+// padding
+@for $i from 1 through 8 {
+  .p-#{$i} {
+    padding: (1rem/4) * $i;
+  }
+}
+
+// margin
+@for $i from 1 through 8 {
+  .m-#{$i} {
+    margin: (1rem/4) * $i;
+  }
+}
+
+@for $i from 1 through 8 {
+  .mt-#{$i} {
+    margin-top: (1rem/4) * $i;
+  }
+}
+@for $i from 1 through 8 {
+  .mr-#{$i} {
+    margin-right: (1rem/4) * $i;
+  }
+}
+
+@for $i from 1 through 8 {
+  .mb-#{$i} {
+    margin-bottom: (1rem/4) * $i;
+  }
+}
+@for $i from 1 through 8 {
+  .ml-#{$i} {
+    margin-left: (1rem/4) * $i;
+  }
+}
+
+$light_dark_mode: (
+  dark: #000,
+  light: #fff,
+);
+
+@each $key, $value in $light_dark_mode {
+  .#{$key}-mode {
+    background-color: $value;
+    // color: $value;
+  }
+}
+
+// p-1 ->
+// mt-1
+// mr-3

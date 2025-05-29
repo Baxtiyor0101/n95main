@@ -1,0 +1,168 @@
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.m-1 {
+  margin: 5px;
+}
+
+.br-1 {
+  border-radius: 2px;
+}
+
+.m-2 {
+  margin: 10px;
+}
+
+.br-2 {
+  border-radius: 4px;
+}
+
+.m-3 {
+  margin: 15px;
+}
+
+.br-3 {
+  border-radius: 6px;
+}
+
+.m-4 {
+  margin: 20px;
+}
+
+.br-4 {
+  border-radius: 8px;
+}
+
+.m-5 {
+  margin: 25px;
+}
+
+.br-5 {
+  border-radius: 10px;
+}
+
+.m-6 {
+  margin: 30px;
+}
+
+.br-6 {
+  border-radius: 12px;
+}
+
+.m-7 {
+  margin: 35px;
+}
+
+.br-7 {
+  border-radius: 14px;
+}
+
+.m-8 {
+  margin: 40px;
+}
+
+.br-8 {
+  border-radius: 16px;
+}
+
+.m-9 {
+  margin: 45px;
+}
+
+.br-9 {
+  border-radius: 18px;
+}
+
+.m-10 {
+  margin: 50px;
+}
+
+.br-10 {
+  border-radius: 20px;
+}
+
+.item-10 {
+  font-size: 50px;
+}
+
+.item-9 {
+  font-size: 45px;
+}
+
+.item-8 {
+  font-size: 40px;
+}
+
+.item-7 {
+  font-size: 35px;
+}
+
+.item-6 {
+  font-size: 30px;
+}
+
+.item-5 {
+  font-size: 25px;
+}
+
+.item-4 {
+  font-size: 20px;
+}
+
+.item-3 {
+  font-size: 15px;
+}
+
+.item-2 {
+  font-size: 10px;
+}
+
+.item-1 {
+  font-size: 5px;
+}
+
+.color-light {
+  color: rgb(87, 115, 87);
+}
+
+.color-dark {
+  color: rgb(17, 12, 12);
+}
+
+.color-blue_color {
+  color: blue;
+}
+
+.btn {
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: large;
+  color: blue;
+}
+
+.card {
+  padding: 10px;
+  width: 200px;
+  background-color: blueviolet;
+  border-radius: 10px;
+}/*# sourceMappingURL=main.css.map */

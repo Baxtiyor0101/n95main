@@ -1,0 +1,17 @@
+// a block of reusable css code
+
+@mixin button {
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  @content;
+}
+
+@mixin card($pad: 10px, $width: 200px) {
+  padding: $pad;
+  width: $width;
+  background-color: blueviolet;
+  border-radius: 10px;
+}
+

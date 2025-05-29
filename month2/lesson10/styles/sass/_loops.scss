@@ -1,0 +1,43 @@
+// for while each
+
+@for $i from 1 through 5 {
+  .p-#{$i} {
+    padding: 1rem * $i;
+  }
+}
+
+@for $j from 1 through 10 {
+  .m-#{$j} {
+    margin: 5px * $j;
+  }
+  .br-#{$j} {
+    border-radius: 2px * $j;
+  }
+}
+
+// while
+$value: 10;
+@while $value > 0 {
+  .item-#{$value} {
+    font-size: 5px * $value;
+  }
+  $value: $value - 1;
+}
+
+// each
+// @each $color in red, green, blue {
+//   .color-#{$color} {
+//     color: $color;
+//   }
+// }
+
+$themes: (
+  light: rgb(87, 115, 87),
+  dark: rgb(17, 12, 12),
+  blue_color: blue,
+);
+@each $key, $value in $themes {
+  .color-#{$key} {
+    color: $value;
+  }
+}
